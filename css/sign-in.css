@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Degradê no fundo e Responsivo*/
+body {
+    background: radial-gradient(155% 80% at 125% 58%, #757ED6  70%, #D766AB 90%)  no-repeat center center fixed;
+    background-repeat: no-repeat;
+}
+
+.caixa{
+    border-radius: 10px;
+    height: 550px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+/*Formulário Sign-in*/
+.formulario{
+    background-color: white;
+    height: 550px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.imagem-roxa{
+    background-image: url('../img/background.svg');
+    height: 550px;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.alinhar-montanha{
+    text-align: right;
+}
+
+.imagem-montanha{
+    position: relative;
+    left: 25px;
+    top: -2.5px;
+    height: 15px;
+    width: 38px;
+    margin-right: 5px;  
+}
+
+b{
+    font-size: 1.0em;
+}
+
+.sign-In{
+    font-size: 2.0em;
+    padding-top: 70px;
+}
+
+.text-login{
+    font-size: 1.0em;
+}
+
+/*Input e Design do Email e da Senha*/
+.input-e-p{
+    text-align: left;
+    position: relative;
+    top: -10px;
+    font-size: 1.0em;
+    color: gray;
+    background-color: white;
+    border: 1.5px;
+    border-style: solid;
+    border-color: gray;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 32px;
+}
+.input-e-p:active{
+    box-shadow: 0px 0px 0.5em gray;
+}
+
+.text-email{
+    font-size: 0.85em;
+    position: relative;
+    top: -10px;
+}
+
+.text-password{
+    font-size: 0.9em;
+    position: relative;
+    left: -37px;
+    top: -10px;
+    padding-top: 15px;
+}
+
+.icon-email{
+    position: relative;
+    top: -50px;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+.icon-password{
+    position: relative;
+    top: -36px;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+/*Botão continue*/
+.button1{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 1.0em;
+    color: white;
+    background-color: #491D98;
+    border: 1.5px;
+    border-style: solid;
+    border-color: #491D98;
+    height: 30px;
+    border-radius: 5px;
+}
+.button1:hover{
+    background-color: white;
+    color: #491D98;
+}
+.button1:active{
+    box-shadow: 0px 0px 0.5em #491D98;
+}
+.icon-continue{
+    padding-left: 8px;
+}
+
+/*Texto para Cadastro*/
+.sign-Up{
+    text-align: center;
+    position: relative;
+    top: -10px;
+    padding-top: 10px;
+    font-size: 1.0em;
+}
+
+/*Link para Cadastro*/
+.sign-up-link{
+    color: purple;
+    text-decoration: none;
+}
+.sign-up-link:hover{
+    font-weight: bold;
+    color: #491D98;
+}
+
+/* Totalmente responsivo ate o modelo de celular Galaxy Fold
+Altura-653px Largura-280px */
+
+/*Media query para Responsividade de 1650px para mais*/
+@media (min-width: 1650px){
+
+    .caixa{
+        height: 700px;
+        margin-bottom: 119px;
+    }
+    .formulario{
+        height: 700px;
+    }
+    .imagem-roxa{
+        height: 700px;
+    }
+    .sign-In{
+        padding-top: 110px;
+    }
+    .text-login{
+        font-size: 1.0em;
+    }
+    .text-email{
+        font-size: 1.0em;
+        padding-top: 10px;
+    }
+    .text-password{
+        font-size: 1.0em;
+    }
+    .button1{
+        font-size: 1.0em;
+        height: 40px;
+    }
+    .input-e-p{
+        font-size: 1.0em;
+        height: 40px;
+    }
+    .icon-email{
+        top: -57px;
+    }
+    .icon-password{
+        top: -42px;
+    }
+    .sign-Up{
+        font-size: 1.0em;
+    }
+    b{
+        font-size: 1.0em;
+    }
+}
+
+
+/*Media query para Responsividade de 991.2px para menos*/
+@media (max-width: 991.2px){
+    .caixa{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .imagem-montanha{
+        left: 7px;
+    }
+
+    b{
+        font-size: 0.8em;
+    }
+    .sign-In{
+        font-size: 1.8em;
+    }
+    .text-login{
+        font-size: 0.8em;
+    }
+    .input-e-p{
+        font-size: 0.8em;
+    }
+    .button1{
+        font-size: 0.8em;
+    }
+    .sign-Up{
+        font-size: 0.8em;
+    }
+} 
+
+/*Media query para Responsividade de 767.9px para menos*/
+@media (max-width: 767.9px){
+    .caixa{
+        height:1000px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .formulario{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .imagem-roxa{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .imagem-montanha{
+        left: 23px;
+    }
+
+    .sign-In{
+        padding-top: 90px;
+    }
+}
+
+/*Media query para Responsividade de 575px para menos*/
+@media (max-width: 575px){
+    .caixa{
+        height: 1000px;
+    }
+
+    .formulario{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .imagem-montanha{
+        left: 10px;
+    }
+
+    .sign-In{
+        padding-top: 90px;
+    }
+}
+
+/*Media query para Responsividade de 330px para menos*/
+@media (max-width: 330px){
+    .caixa{
+        height: 1000px;
+    }
+
+    .formulario{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .imagem-montanha{
+        left: 0px;
+    }
+
+    .sign-In{
+        padding-top: 70px;
+    }
+}
